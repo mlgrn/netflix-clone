@@ -1,3 +1,8 @@
+.row {
+    margin-left: 20px;
+    color: white;
+}
+
 .row__posters {
     display: flex;
     /* this one line makes the row scrollable */
@@ -17,13 +22,20 @@
 .row__poster {
     width: 100%;
     object-fit: contain;
-    max-height: 300px;
+    max-height: 100px;
     transition: transform 500ms;
     margin-right: 10px;
 }
 
 .row__poster:hover {
     transform: scale(1.08);
-  
+}
+
+.row__posterLarge {
+    max-height: 250px;
+
+}
+.row__posterLarge:hover {
+transform: scale(1.1);
 
 }
